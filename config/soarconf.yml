@@ -1,0 +1,46 @@
+ ################################################
+#                                                #
+# IoCSpector Configuration File [YAML]           #
+# Author: vaelwolf                             #
+#                                                #
+# OTRS Config:                                   #
+# Enter your own OTRS Server URL as well as      #
+# username and password for an IoCSpector API    #
+# account/agent within OTRS -> Admin -> Agents   #
+#                                                #
+# Modules:                                       #
+# Add your own custom modules here and/or        #
+# set the module values you do not want to       #
+# run to False.                                  #
+#                                                #
+ ################################################
+
+
+## Define OTRS Parameters Here
+otrs:
+  server: 
+  user: iocspector
+  pass: 
+
+## Define Modules Here
+modules:
+  VirusTotal: 
+     - True
+     - Public
+  AlienVault: 
+     - True
+     - Public
+  CiscoTalos: 
+     - True
+     - Public
+  PrivAssets: 
+     - True
+     - Private
+
+## Define Module API Keys Here
+api_keys:
+  VirusTotalAPI:  
+  AlienVaultAPI: 
+
+## IoCSpector Listening Port
+LPort: 5000
