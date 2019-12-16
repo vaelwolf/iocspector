@@ -137,7 +137,7 @@ if __name__ == '__main__':
 
     ## Welcome Greeting
     logging.info("[IoCSpector] Welcome to IoCSpector!")
-    logging.info("[IoCSpector] Author: J. Checchi")
+    logging.info("[IoCSpector] Author: Vaelwolf")
     logging.info("[IoCSpector] All rights reserved")
 
     ## Load Configuration File and iterate through values
